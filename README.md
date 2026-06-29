@@ -113,7 +113,9 @@ By leveraging Gemini AI Vision Grounding, 50m Spatial Clustering, and WMO Storm 
 ---
 
 ### 📊 Repository Activity
-<img src="https://github.com/lowlighter/metrics/blob/examples/metrics.classic.svg" alt="Metrics" />
+<a href="https://github.com/the-ashutosh-exe">
+  <img src="https://metrics.lecoq.io/the-ashutosh-exe?template=classic" alt="Ashutosh's GitHub Metrics" />
+</a>
 
 ---
 
