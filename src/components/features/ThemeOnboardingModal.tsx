@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, Moon, Sun, Shield, CheckCircle2, ArrowRight, Zap, Trophy, MapPin } from 'lucide-react';
+import { Sparkles, ArrowRight } from 'lucide-react';
 import { useSettingsStore, type ThemeMode } from '../../store/useSettingsStore';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';

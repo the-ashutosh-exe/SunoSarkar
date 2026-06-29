@@ -390,7 +390,7 @@ export const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
                 </p>
                 <button
                   onClick={() => {
-                    setSettingsOpen(false);
+                    setShowSettings(false);
                     window.dispatchEvent(new Event('open-theme-onboarding'));
                   }}
                   className="w-full py-1.5 px-3 rounded-lg bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 text-emerald-300 hover:text-white font-mono text-xs font-bold flex items-center justify-center gap-1.5 transition-all hover:scale-[1.01]"

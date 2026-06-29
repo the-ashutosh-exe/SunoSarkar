@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, MapPinned, PlusCircle, Activity, X, LogOut, User as UserIcon, Users } from 'lucide-react';
+import { LayoutDashboard, MapPinned, PlusCircle, X, LogOut, User as UserIcon, Users } from 'lucide-react';
 import { cn } from '../../utils/cn';
 import { useAuthStore } from '../../store/useAuthStore';
 import { useSettingsStore } from '../../store/useSettingsStore';

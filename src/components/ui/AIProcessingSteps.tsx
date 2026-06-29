@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { CheckCircle2, Sparkles, Cpu, MapPin, Zap } from 'lucide-react';
 
 const STEPS = [
@@ -34,7 +34,6 @@ export const AIProcessingSteps: React.FC = () => {
 
       <div className="w-full space-y-3 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
         {STEPS.map((step, idx) => {
-          const Icon = step.icon;
           const isDone = idx < currentStep;
           const isCurrent = idx === currentStep;
 
