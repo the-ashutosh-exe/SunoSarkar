@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/username/SunoSarkar/main/public/logo.png" alt="SunoSarkar AI Logo" width="160" />
+  <img src="https://raw.githubusercontent.com/the-ashutosh-exe/SunoSarkar/main/public/logo.png" alt="SunoSarkar AI Logo" width="160" />
   <h1>SunoSarkar AI <br/> <p><em>Autonomous Municipal Intelligence OS</em></p></h1>
   
   <p>
@@ -7,17 +7,17 @@
   </p>
   
   <p>
-    <a href="https://github.com/username/SunoSarkar/actions/workflows/ci.yml">
+    <a href="https://github.com/the-ashutosh-exe/SunoSarkar/actions/workflows/ci.yml">
       <img src="https://github.com/lowlighter/metrics/actions/workflows/ci.yml/badge.svg" alt="Build Status" />
     </a>
-    <a href="https://github.com/username/SunoSarkar/issues">
-      <img src="https://img.shields.io/github/issues/username/SunoSarkar?style=flat-square&color=emerald" alt="Issues" />
+    <a href="https://github.com/the-ashutosh-exe/SunoSarkar/issues">
+      <img src="https://img.shields.io/github/issues/the-ashutosh-exe/SunoSarkar?style=flat-square&color=emerald" alt="Issues" />
     </a>
-    <a href="https://github.com/username/SunoSarkar/pulls">
-      <img src="https://img.shields.io/github/issues-pr/username/SunoSarkar?style=flat-square&color=emerald" alt="Pull Requests" />
+    <a href="https://github.com/the-ashutosh-exe/SunoSarkar/pulls">
+      <img src="https://img.shields.io/github/issues-pr/the-ashutosh-exe/SunoSarkar?style=flat-square&color=emerald" alt="Pull Requests" />
     </a>
     <a href="LICENSE">
-      <img src="https://img.shields.io/github/license/username/SunoSarkar?style=flat-square" alt="License" />
+      <img src="https://img.shields.io/github/license/the-ashutosh-exe/SunoSarkar?style=flat-square" alt="License" />
     </a>
   </p>
 </div>
@@ -84,7 +84,7 @@ By leveraging Gemini AI Vision Grounding, 50m Spatial Clustering, and WMO Storm 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/username/SunoSarkar.git
+   git clone https://github.com/the-ashutosh-exe/SunoSarkar.git
    cd SunoSarkar
    ```
 
