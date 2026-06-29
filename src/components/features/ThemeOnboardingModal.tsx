@@ -62,8 +62,7 @@ export const ThemeOnboardingModal: React.FC = () => {
   useEffect(() => {
     const onboarded = localStorage.getItem('civicpulse_theme_onboarded');
     if (!onboarded) {
-      setIsOpen(true);
-      setSelectedTheme('genz-light');
+      localStorage.setItem('civicpulse_theme_onboarded', 'true');
       setThemeMode('genz-light');
     }
 
