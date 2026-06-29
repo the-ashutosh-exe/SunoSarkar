@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text font-body antialiased transition-colors duration-200;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+}
+
+/* ==========================================================================
+   Real Functional Theme Overrides (Solar Light Mode - UI/UX Pro Max Spec)
+   ========================================================================== */
+
+/* Solar Light Theme */
+html[data-theme="light"] body {
+  background-color: #f8fafc !important;
+  color: #020617 !important;
+}
+
+/* Modal Backdrops & Fixed Overlays */
+html[data-theme="light"] [class*="inset-0"][class*="bg-slate-"] {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+/* Card & Container Backgrounds (ignoring hover:/md: prefixes and styling fixed sidebars properly) */
+html[data-theme="light"] [class*=" bg-slate-900"]:not([class*="inset-0"]),
+html[data-theme="light"] [class^="bg-slate-900"]:not([class*="inset-0"]) {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05) !important;
+}
+html[data-theme="light"] [class*=" bg-slate-950"]:not([class*="inset-0"]),
+html[data-theme="light"] [class^="bg-slate-950"]:not([class*="inset-0"]) {
+  background-color: #f8fafc !important;
+  background-image: none !important;
+}
+html[data-theme="light"] [class*=" bg-slate-800"]:not([class*="inset-0"]),
+html[data-theme="light"] [class^="bg-slate-800"]:not([class*="inset-0"]) {
+  background-color: #f1f5f9 !important;
+}
+
+/* Gradients */
+html[data-theme="light"] [class*="from-slate-"] {
+  background-image: none !important;
+}
+
+/* Hover States */
+html[data-theme="light"] [class*="hover:bg-slate-800"]:hover {
+  background-color: #e2e8f0 !important;
+}
+html[data-theme="light"] [class*="hover:bg-slate-900"]:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* Borders & Dividers */
+html[data-theme="light"] [class*="border-slate-800"],
+html[data-theme="light"] [class*="divide-slate-800"] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #e2e8f0 !important;
+}
+html[data-theme="light"] [class*="border-slate-700"],
+html[data-theme="light"] [class*="divide-slate-700"] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #cbd5e1 !important;
+}
+
+/* Typography Contrast (WCAG AAA Compliance: #020617 primary, #334155 muted) */
+html[data-theme="light"] [class*="text-slate-100"],
+html[data-theme="light"] [class*="text-slate-200"] {
+  color: #020617 !important;
+}
+html[data-theme="light"] [class*="text-slate-300"] {
+  color: #1e293b !important;
+}
+html[data-theme="light"] [class*="text-slate-400"] {
+  color: #334155 !important;
+}
+html[data-theme="light"] [class*="text-slate-500"] {
+  color: #475569 !important;
+}
+html[data-theme="light"] [class*="hover:text-slate-100"]:hover {
+  color: #020617 !important;
+}
+
+/* Rings & Shadows */
+html[data-theme="light"] [class*="ring-slate-"] {
+  --tw-ring-color: #cbd5e1 !important;
+}
+html[data-theme="light"] [class*="shadow-inner"] {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+/* ==========================================================================
+   AMOLED Pitch Black High Contrast Theme
+   ========================================================================== */
+html[data-theme="amoled"] body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+html[data-theme="amoled"] [class*=" bg-slate-950"]:not([class*="inset-0"]),
+html[data-theme="amoled"] [class^="bg-slate-950"]:not([class*="inset-0"]) {
+  background-color: #000000 !important;
+}
+html[data-theme="amoled"] [class*=" bg-slate-900"]:not([class*="inset-0"]),
+html[data-theme="amoled"] [class^="bg-slate-900"]:not([class*="inset-0"]) {
+  background-color: #080808 !important;
+}
+html[data-theme="amoled"] [class*=" bg-slate-800"]:not([class*="inset-0"]),
+html[data-theme="amoled"] [class^="bg-slate-800"]:not([class*="inset-0"]) {
+  background-color: #141414 !important;
+}
+html[data-theme="amoled"] [class*="border-slate-800"] {
+  border-color: #222222 !important;
+}
+html[data-theme="amoled"] [class*="border-slate-700"] {
+  border-color: #333333 !important;
+}
+
+/* ==========================================================================
+   Gamified SaaS 🏆 Premium Playful Productivity Theme (UI/UX Pro Max Spec)
+   Inspired by Discord, Notion, Duolingo, Linear, and Supercell Games
+   ========================================================================== */
+html[data-theme="genz-light"] body {
+  background-color: #F8F7F4 !important;
+  color: #111111 !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Modal Backdrops */
+html[data-theme="genz-light"] [class*="inset-0"][class*="bg-slate-"] {
+  background-color: rgba(17, 17, 17, 0.7) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Primary Cards & Containers: Rounded 20px white cards with thick 3px black borders */
+html[data-theme="genz-light"] [class*=" bg-slate-900"]:not([class*="inset-0"]),
+html[data-theme="genz-light"] [class^="bg-slate-900"]:not([class*="inset-0"]) {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+  border: 3px solid #1E1E1E !important;
+  border-radius: 20px !important;
+  box-shadow: 4px 4px 0px 0px #1E1E1E !important;
+  color: #111111 !important;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease !important;
+}
+
+/* Hover Lift Animation */
+html[data-theme="genz-light"] [class*=" bg-slate-900"]:not([class*="inset-0"]):hover,
+html[data-theme="genz-light"] [class^="bg-slate-900"]:not([class*="inset-0"]):hover {
+  transform: translateY(-4px) scale(1.01) !important;
+  box-shadow: 8px 8px 0px 0px #1E1E1E !important;
+}
+
+/* Inner Sections & Inputs: Rounded white tables/inputs with bold borders */
+html[data-theme="genz-light"] [class*=" bg-slate-950"]:not([class*="inset-0"]),
+html[data-theme="genz-light"] [class^="bg-slate-950"]:not([class*="inset-0"]) {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+  border: 2px solid #1E1E1E !important;
+  border-radius: 14px !important;
+  box-shadow: 2px 2px 0px 0px #1E1E1E !important;
+  color: #111111 !important;
+}
+
+/* Badges, XP Pills & Status: Golden Yellow & Bright Blue accents */
+html[data-theme="genz-light"] [class*=" bg-slate-800"]:not([class*="inset-0"]),
+html[data-theme="genz-light"] [class^="bg-slate-800"]:not([class*="inset-0"]) {
+  background-color: #F4B400 !important;
+  border: 2px solid #1E1E1E !important;
+  color: #111111 !important;
+  font-weight: 800 !important;
+  border-radius: 9999px !important;
+  box-shadow: 2px 2px 0px 0px #1E1E1E !important;
+}
+
+/* Gradients */
+html[data-theme="genz-light"] [class*="from-slate-"] {
+  background-image: none !important;
+}
+
+/* Interactive Button Hover Pops */
+html[data-theme="genz-light"] [class*="hover:bg-slate-800"]:hover,
+html[data-theme="genz-light"] [class*="hover:bg-slate-900"]:hover {
+  background-color: #3B82F6 !important;
+  border-color: #1E1E1E !important;
+  color: #FFFFFF !important;
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 5px 5px 0px 0px #1E1E1E !important;
+}
+
+/* Borders & Dividers */
+html[data-theme="genz-light"] [class*="border-slate-800"],
+html[data-theme="genz-light"] [class*="divide-slate-800"] > :not([hidden]) ~ :not([hidden]),
+html[data-theme="genz-light"] [class*="border-slate-700"],
+html[data-theme="genz-light"] [class*="divide-slate-700"] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1E1E1E !important;
+}
+
+/* Pure Black High Contrast Typography */
+html[data-theme="genz-light"] [class*="text-slate-100"],
+html[data-theme="genz-light"] [class*="text-slate-200"],
+html[data-theme="genz-light"] [class*="text-slate-300"],
+html[data-theme="genz-light"] [class*="text-slate-400"],
+html[data-theme="genz-light"] [class*="text-slate-500"] {
+  color: #111111 !important;
+  font-weight: 700 !important;
+}
+html[data-theme="genz-light"] [class*="hover:text-slate-100"]:hover {
+  color: #111111 !important;
+}
+
+/* Rings & Shadows */
+html[data-theme="genz-light"] [class*="ring-slate-"] {
+  --tw-ring-color: #1E1E1E !important;
+}
+html[data-theme="genz-light"] [class*="shadow-inner"] {
+  box-shadow: none !important;
+}
+
